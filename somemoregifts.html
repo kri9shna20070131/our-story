@@ -1,0 +1,245 @@
+<!-- Save this file as: gifts.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Our Gifts 🎁❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:
+        radial-gradient(circle at top left, #2a0a1f, #080808 45%),
+        radial-gradient(circle at bottom right, #0f2338, #080808 45%);
+    color:white;
+    overflow-x:hidden;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-family:'Dancing Script', cursive;
+    font-size:5rem;
+    color:#ff4d88;
+    margin-bottom:20px;
+    text-shadow:0 0 30px rgba(255,77,136,0.35);
+}
+
+.hero p{
+    font-size:1.2rem;
+    line-height:2;
+    color:#ddd;
+}
+
+.section{
+    padding:20px 8% 100px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:28px;
+    overflow:hidden;
+    backdrop-filter:blur(12px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.35);
+    transition:0.4s ease;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:0 20px 50px rgba(255,77,136,0.2);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:30px;
+}
+
+.card-content h2{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:20px;
+    font-size:0.95rem;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 24px;
+    background:#ff4d88;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#111;
+}
+
+.note{
+    padding:100px 8%;
+    text-align:center;
+    background:rgba(255,255,255,0.03);
+}
+
+.note h2{
+    font-family:'Dancing Script', cursive;
+    font-size:4rem;
+    color:#ff4d88;
+    margin-bottom:30px;
+}
+
+.note p{
+    max-width:900px;
+    margin:auto;
+    line-height:2;
+    color:#ddd;
+    font-size:1.1rem;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .note h2{
+        font-size:2.5rem;
+    }
+
+    .hero p,
+    .note p{
+        font-size:1rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Our Gifts 🎁❤️</h1>
+        <p>
+            Every gift we exchanged carried a piece of our love.
+            Click on any month to open a dedicated page with all the gifts
+            we gave each other during that month.
+        </p>
+    </div>
+</section>
+
+<!-- 6 SUB WEBSITES -->
+<section class="section">
+    <div class="cards">
+
+        <!-- Month 1 -->
+        <div class="card">
+            <img src="Screenshot 2026-05-10 151425.png" alt="Month 1 Gifts">
+            <div class="card-content">
+                
+                <a href="https://www.canva.com/design/DAHHIE8F0Qg/REzrRdnVwfWGQ5pSzlaIcA/view?utm_content=DAHHIE8F0Qg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hde7605ec0d" class="btn">Open</a>
+            </div>
+        </div>
+
+        <!-- Month 2 -->
+        <div class="card">
+            <img src="Screenshot 2026-05-10 153541.png" alt="Month 2 Gifts">
+            <div class="card-content">
+               
+                <a href="WhatsApp Image 2026-05-10 at 10.05.09 PM (2).jpeg" class="btn">Open</a>
+            </div>
+        </div>
+
+        <!-- Month 3 -->
+        <div class="card">
+            <img src="WhatsApp Image 2026-05-10 at 2.51.47 PM (1).jpeg" alt="Month 3 Gifts">
+            <div class="card-content">
+                
+                <a href="https://www.canva.com/design/DAHFIzGfz-4/rtqCRT5qqgazAnpW9Ux1JQ/edit" class="btn">Open</a>
+            </div>
+        </div>
+
+        <!-- Month 4 -->
+        <div class="card">
+            <img src="Screenshot 2026-05-10 153550.png" alt="Month 4 Gifts">
+            <div class="card-content">
+                
+                <a href="https://drive.google.com/drive/folders/1DDqwzgttj1k1GdrM9bZoj32knO3U0L03" class="btn">Open</a>
+            </div>
+        </div>
+
+        <!-- Month 5 -->
+        <div class="card">
+            <img src="Screenshot 2026-05-10 151407.png" alt="Month 5 Gifts">
+            <div class="card-content">
+        
+                <a href="https://www.canva.com/design/DAHFiT4TRbg/Q2rRmMLOV90uYR0-5QkAlg/edit?fbclid=PAVERTVgRqiRFleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaefi4WwhPAWw80NW-3qC4gk-14JFnUSCtVuoCFJcnogftOa-aVhOnj--kAKEg_aem_Ijp7t1j1BzVm7-oE-_CcRg" class="btn">Open</a>
+            </div>
+        </div>
+
+        <!-- Month 6 -->
+        <div class="card">
+            <img src="Screenshot 2026-05-10 151414.png" alt="Month 6 Gifts">
+            <div class="card-content">
+        
+                <a href="valentine.html" class="btn">Open</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- LOVE NOTE -->
+<section class="note">
+    <h2>The Best Gift Was You 💝</h2>
+    <p>
+        Every gift we exchanged was special,
+        but the greatest gift in my life will always be you.
+        Thank you for every thoughtful surprise,
+        every little gesture,
+        and every moment that made me feel loved.
+    </p>
+</section>
+
+</body>
+</html>

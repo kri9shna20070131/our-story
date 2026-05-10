@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>6 Months of Us ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:black;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* VIDEO */
+
+    video{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:0;
+    }
+
+    /* INTRO SECTION */
+
+    .intro{
+      height:100vh;
+      width:100%;
+      position:relative;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      overflow:hidden;
+      text-align:center;
+    }
+
+    /* DARK OVERLAY */
+
+    .overlay{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.55);
+      z-index:1;
+    }
+
+    /* MAIN TEXT */
+
+    .logo{
+      font-size:6rem;
+      font-weight:700;
+      color:#e50914;
+      letter-spacing:12px;
+      z-index:2;
+      animation:netflixIntro 4s ease forwards;
+      text-shadow:0 0 25px rgba(229,9,20,0.9);
+    }
+
+    .subtext{
+      margin-top:20px;
+      font-size:1.3rem;
+      color:#ddd;
+      z-index:2;
+      opacity:0;
+      animation:fadeIn 2s ease forwards;
+      animation-delay:2s;
+    }
+
+    .scroll-down{
+      position:absolute;
+      bottom:30px;
+      font-size:1rem;
+      color:#ccc;
+      z-index:2;
+      animation:bounce 2s infinite;
+    }
+
+    /* ANIMATIONS */
+
+    @keyframes netflixIntro{
+
+      0%{
+        transform:scale(0.5);
+        opacity:0;
+      }
+
+      40%{
+        opacity:1;
+      }
+
+      100%{
+        transform:scale(1.15);
+        opacity:1;
+      }
+    }
+
+    @keyframes fadeIn{
+      to{
+        opacity:1;
+      }
+    }
+
+    @keyframes bounce{
+
+      0%,100%{
+        transform:translateY(0);
+      }
+
+      50%{
+        transform:translateY(10px);
+      }
+    }
+
+    /* JOURNEY SECTION */
+
+    .journey{
+      min-height:100vh;
+      padding:100px 8%;
+      background:linear-gradient(to bottom,#000,#111);
+    }
+
+    .heading{
+      text-align:center;
+      margin-bottom:70px;
+    }
+
+    .heading h1{
+      font-size:3rem;
+      margin-bottom:15px;
+    }
+
+    .heading p{
+      color:#bbb;
+      font-size:1.1rem;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:25px;
+      overflow:hidden;
+      backdrop-filter:blur(10px);
+      transition:0.4s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-10px) scale(1.02);
+      box-shadow:0 0 25px rgba(229,9,20,0.5);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card-content h2{
+      margin-bottom:10px;
+    }
+
+    .card-content p{
+      color:#ccc;
+      line-height:1.6;
+      margin-bottom:20px;
+      font-size:0.95rem;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 22px;
+      background:#e50914;
+      color:white;
+      text-decoration:none;
+      border-radius:50px;
+      transition:0.3s;
+      font-weight:500;
+    }
+
+    .btn:hover{
+      background:white;
+      color:black;
+    }
+
+    /* LOVE LETTER */
+
+    .letter{
+      padding:120px 8%;
+      text-align:center;
+      background:#080808;
+    }
+
+    .letter h2{
+      font-size:3rem;
+      color:#e50914;
+      margin-bottom:30px;
+    }
+
+    .letter p{
+      max-width:900px;
+      margin:auto;
+      line-height:2;
+      color:#ddd;
+      font-size:1.1rem;
+    }
+
+    footer{
+      padding:30px;
+      text-align:center;
+      color:#777;
+      background:black;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      .logo{
+        font-size:3rem;
+        letter-spacing:5px;
+      }
+
+      .heading h1,
+      .letter h2{
+        font-size:2rem;
+      }
+
+      .subtext{
+        font-size:1rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- INTRO SECTION -->
+
+  <section class="intro">
+
+    <!-- VIDEO -->
+
+    <video id="introVideo" autoplay playsinline>
+      <source src="Netflix Intro 1080p (Highest Quality).mp4" type="video/mp4">
+    </video>
+
+    <!-- OVERLAY -->
+
+    <div class="overlay"></div>
+
+    <!-- TEXT -->
+
+    <div class="logo">OUR STORY</div>
+
+    <div class="subtext">
+      6 Months of Love ❤️
+    </div>
+
+    <div class="scroll-down">
+      Tap Anywhere For Sound ↓
+    </div>
+
+  </section>
+
+  <!-- JOURNEY SECTION -->
+
+  <section class="journey">
+
+    <div class="heading">
+
+      <h1>Everything We’ve Been Through ❤️</h1>
+
+      <p>
+        Every month with you became my favorite memory.
+      </p>
+
+    </div>
+
+    <div class="cards">
+
+      <!-- MONTH 1 -->
+
+      <div class="card">
+
+        <img src="smile.jpeg" alt="Month 1">
+
+        <div class="card-content">
+
+          <h2>Month 1 ❤️</h2>
+
+          <p>
+            The beginning of something beautiful. The month where everything started.
+          </p>
+
+          <a href="1month.html" class="btn">
+            Open Memories
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- MONTH 2 -->
+
+      <div class="card">
+
+        <img src="Screenshot 2026-05-10 151400.png" alt="Month 2">
+
+        <div class="card-content">
+
+          <h2>Month 2 ❤️</h2>
+
+          <p>
+            We laughed more, talked more, and became closer than ever before.
+          </p>
+
+          <a href="month2.html" class="btn">
+            Open Memories
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- MONTH 3 -->
+
+      <div class="card">
+
+        <img src="kssi.jpeg" alt="Month 3">
+
+        <div class="card-content">
+
+          <h2>Month 3 ❤️</h2>
+
+          <p>
+            More memories, more love, and more moments that meant everything to us.
+          </p>
+
+          <a href="https://kri9shna20070131.github.io/krishna/" class="btn">
+            Open Memories
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- MONTH 4 -->
+
+      <div class="card">
+
+        <img src="WhatsApp Image 2026-05-10 at 2.34.44 PM.jpeg" alt="Month 4">
+
+        <div class="card-content">
+
+          <h2>Month 4 ❤️</h2>
+
+          <p>
+            The month where our bond became even stronger and more beautiful.
+          </p>
+
+          <a href="https://www.canva.com/design/DAHFB1Gq4GM/xu8tm6pQGEnMdfmlZvy6oA/edit" class="btn">
+            Open Memories
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- MONTH 5 -->
+
+      <div class="card">
+
+        <img src="Screenshot 2026-05-10 153550.png
+        " alt="Month 5">
+
+        <div class="card-content">
+
+          <h2>Month 5 ❤️</h2>
+
+          <p>
+            By now, loving you had become the easiest and happiest thing in my life.
+          </p>
+
+          <a href="month5.html" class="btn">
+            Open Memories
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- MONTH 6 -->
+
+      <div class="card">
+
+        <img src="Screenshot 2026-05-10 153541.png" alt="Month 6">
+
+        <div class="card-content">
+
+          <h2>Month 6 ❤️</h2>
+
+          <p>
+            Six months later and I still fall for you more every single day.
+          </p>
+
+          <a href="jahanvi.html" class="btn">
+            Open Memories
+          </a>
+
+        </div>
+
+      </div>
+
+ <div class="card">
+
+        <img src="thumbsup1.jpeg" alt="Month 2">
+
+        <div class="card-content">
+
+          <h2>Some Cute Gifts</h2>
+          <a href="somemoregifts.html" class="btn">
+            Open Memories
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- LOVE LETTER -->
+
+  <section class="letter">
+
+    <h2>To Us ❤️</h2>
+
+    <p>
+
+      Thank u for being part of my life sweetuuu💋💋💋😘😘😘🥰🥰, my happiness, my peace, and my favorite person.
+
+      <br><br>
+
+      These 6 months were not just months to me — they became memories I will carry forever.
+
+      <br><br>
+
+      Every laugh, every late-night conversation, every little moment with u became special , and i cant forget it in my life and after life.
+
+      <br><br>
+
+      And this website is just a small way to show how much you truly mean to me.💋💋😘😘🥰🥰😘😘😋😋🥳🥳🥳🥳🫠🫠🫠💋💋💋💋
+
+      <br><br>
+
+      I love you ❤️💋😘😘😋🥳🥳🥳🫠💋💋💋
+
+    </p>
+
+  </section>
+
+  <footer>
+    Made with ❤️ for the most special person.
+  </footer>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+const correctPassword = "jahanvikrishna6months"; // Change this password
+const enteredPassword = prompt("Enter the secret password to unlock our memories ❤️");
+
+if (enteredPassword !== correctPassword) {
+    document.body.innerHTML = `
+        <div style="
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 2rem;
+            text-align: center;
+            padding: 20px;
+        ">
+            Access Denied 💔
+        </div>
+    `;
+    throw new Error("Wrong password");
+}
+
+    const video = document.getElementById("introVideo");
+
+    // Start muted for autoplay
+    video.muted = true;
+
+    // Unmute on first click
+    document.body.addEventListener("click", () => {
+
+      video.muted = false;
+      video.volume = 1;
+
+    }, { once: true });
+
+    // Auto scroll after video ends
+    video.addEventListener("ended", () => {
+
+      window.scrollTo({
+        top: window.innerHeight,
+        behavior: "smooth"
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>

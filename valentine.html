@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Valentine's Gifts For You ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:
+        radial-gradient(circle at top left, #4a001f, #080808 45%),
+        radial-gradient(circle at bottom right, #1a1a35, #080808 45%);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-family:'Dancing Script', cursive;
+    font-size:5rem;
+    color:#ff4d88;
+    margin-bottom:20px;
+    text-shadow:0 0 30px rgba(255,77,136,0.35);
+}
+
+.hero p{
+    font-size:1.2rem;
+    line-height:2;
+    color:#ddd;
+}
+
+/* GALLERY */
+.gallery-section{
+    padding:20px 8% 100px;
+}
+
+.gallery{
+    columns:3 300px;
+    column-gap:20px;
+}
+
+.gallery-item{
+    break-inside:avoid;
+    margin-bottom:20px;
+    border-radius:24px;
+    overflow:hidden;
+    background:rgba(255,255,255,0.05);
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+    transition:0.4s ease;
+}
+
+.gallery-item:hover{
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 20px 50px rgba(255,77,136,0.25);
+}
+
+.gallery-item img{
+    width:100%;
+    display:block;
+}
+
+.caption{
+    padding:20px;
+    text-align:center;
+    color:#ddd;
+    font-size:0.95rem;
+}
+
+/* NOTE */
+.note{
+    padding:100px 8%;
+    text-align:center;
+    background:rgba(255,255,255,0.03);
+}
+
+.note h2{
+    font-family:'Dancing Script', cursive;
+    font-size:4rem;
+    color:#ff4d88;
+    margin-bottom:30px;
+}
+
+.note p{
+    max-width:900px;
+    margin:auto;
+    line-height:2;
+    color:#ddd;
+    font-size:1.1rem;
+}
+
+/* BUTTON */
+.back-btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:14px 30px;
+    background:#ff4d88;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:white;
+    color:#111;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .note h2{
+        font-size:2.5rem;
+    }
+
+    .hero p,
+    .note p{
+        font-size:1rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>My Valentine's Gifts For You ❤️</h1>
+        <p>
+            Every gift I gave you on Valentine's Day
+            carried a piece of my heart.
+            Each one was a small way of saying
+            how much you mean to me.
+        </p>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <img src="WhatsApp Image 2026-05-10 at 9.11.24 PM.jpeg" alt="Gift 1">
+            <div class="caption">A little surprise with a lot of love 💝</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="WhatsApp Image 2026-05-10 at 10.05.08 PM (1).jpeg" alt="Gift 2">
+            <div class="caption">Chosen specially for you ❤️</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="WhatsApp Image 2026-05-10 at 10.05.08 PM.jpeg" alt="Gift 3">
+            <div class="caption">Because you deserve everything beautiful 🌹</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="WhatsApp Image 2026-05-10 at 10.05.09 PM (1).jpeg" alt="Gift 4">
+            <div class="caption">Wrapped with love 🎀</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="WhatsApp Image 2026-05-10 at 10.05.09 PM (2).jpeg" alt="Gift 5">
+            <div class="caption">One more reason to smile 😊</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="WhatsApp Image 2026-05-10 at 10.05.09 PM.jpeg" alt="Gift 6">
+            <div class="caption">My heart in gift form ❤️</div>
+        </div>
+
+    </div>
+</section>
+    <a href="6.html" class="back-btn">← Back to Our Gifts</a>
+</section>
+
+</body>
+</html>
